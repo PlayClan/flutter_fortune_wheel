@@ -343,9 +343,6 @@ class PanAwareBuilder extends HookWidget {
 
       return GestureDetector(
         behavior: behavior,
-        onPanStart: physics.handlePanStart,
-        onPanUpdate: physics.handlePanUpdate,
-        onPanEnd: physics.handlePanEnd,
         child: AnimatedBuilder(
             animation: returnAnim,
             builder: (context, _) {
